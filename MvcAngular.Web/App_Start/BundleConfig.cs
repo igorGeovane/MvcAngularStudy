@@ -12,6 +12,7 @@ namespace MvcAngular.Web
                 .Include("~/bundles/polyfills.*")
                 .Include("~/bundles/scripts.*")
                 .Include("~/bundles/vendor.*")
+                .Include("~/bundles/scripts.*")
                 .Include("~/bundles/main.*"));
 
             bundles.Add(new StyleBundle("~/Scripts/Styles")

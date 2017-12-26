@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{ title }}!\n  </h1>\n  <img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\">\n</div>\n<h2>Here are some links to help you start: </h2>\n<ul>\n  <li>\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://angular.io/tutorial\">Tour of Heroes</a></h2>\n  </li>\n  <li>\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://github.com/angular/angular-cli/wiki\">CLI Documentation</a></h2>\n  </li>\n  <li>\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://blog.angular.io/\">Angular blog</a></h2>\n  </li>\n</ul>\n\n"
+module.exports = "<div class=\"ui-g ui-fluid\">\r\n    <div class=\"ui-g-12 ui-md-4\">\r\n        <div class=\"ui-inputgroup\">\r\n            <span class=\"ui-inputgroup-addon\"><i class=\"fa fa-user\"></i></span>\r\n            <input type=\"text\" pInputText placeholder=\"Username\">\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"ui-g-12 ui-md-4\">\r\n        <div class=\"ui-inputgroup\">\r\n            <span class=\"ui-inputgroup-addon\">$</span>\r\n            <input type=\"text\" pInputText placeholder=\"Price\">\r\n            <span class=\"ui-inputgroup-addon\">.00</span>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"ui-g-12 ui-md-4\">\r\n        <div class=\"ui-inputgroup\">\r\n            <span class=\"ui-inputgroup-addon\">www</span>\r\n            <input type=\"text\" pInputText placeholder=\"Website\">\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<h3>Checkbox and RadioButton</h3>\r\n<div class=\"ui-g ui-fluid\">\r\n    <div class=\"ui-g-12 ui-md-4\">\r\n        <div class=\"ui-inputgroup\">\r\n            <span class=\"ui-inputgroup-addon\"><p-checkbox></p-checkbox></span>\r\n            <input type=\"text\" pInputText placeholder=\"Username\">\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"ui-g-12 ui-md-4\">\r\n        <div class=\"ui-inputgroup\">\r\n            <input type=\"text\" pInputText placeholder=\"Price\">\r\n            <span class=\"ui-inputgroup-addon\"><p-radioButton></p-radioButton></span>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"ui-g-12 ui-md-4\">\r\n        <div class=\"ui-inputgroup\">\r\n            <span class=\"ui-inputgroup-addon\"><p-checkbox></p-checkbox></span>\r\n            <input type=\"text\" pInputText placeholder=\"Website\">\r\n            <span class=\"ui-inputgroup-addon\"><p-radioButton></p-radioButton></span>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div>\r\n    <h3>Buttons</h3>\r\n\r\n    <button pButton type=\"button\" (click)=\"count()\" label=\"Primary\"></button>\r\n\r\n    <button pButton type=\"button\" (click)=\"count()\" label=\"Secondary\" class=\"ui-button-secondary\"></button>\r\n\r\n    <button pButton type=\"button\" (click)=\"count()\" label=\"Success\" class=\"ui-button-success\"></button>\r\n\r\n    <button pButton type=\"button\" (click)=\"count()\" label=\"Info\" class=\"ui-button-info\"></button>\r\n\r\n    <button pButton type=\"button\" (click)=\"count()\" label=\"Warning\" class=\"ui-button-warning\"></button>\r\n\r\n    <button pButton type=\"button\" (click)=\"count()\" label=\"Danger\" class=\"ui-button-danger\"></button>\r\n\r\n    Number of clicks: {{ clicks }}\r\n</div>\r\n\r\n<div class=\"ui-g ui-fluid\">\r\n    <div class=\"ui-g-12 ui-md-4 ui-md-offset-4\">\r\n        <h3>Panel</h3>\r\n        <p-panel header=\"Title\" [toggleable]=\"true\">\r\n            <p-header>\r\n                Header Message: <p-messages [(value)]=\"msgs\"></p-messages>\r\n            </p-header>\r\n                <button type=\"button\" (click)=\"show()\">Show</button>\r\n            <p-footer>\r\n                <button type=\"button\" (click)=\"clear()\">Hide</button>\r\n            </p-footer>\r\n        </p-panel>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"content-section implementation\">\r\n    <h3 class=\"first\">Positions</h3>\r\n    <div class=\"ui-g ui-fluid\">\r\n        <div class=\"ui-g-12 ui-md-3\">\r\n            <input type=\"text\" pInputText pTooltip=\"Enter your username\" placeholder=\"Right\">\r\n        </div>\r\n        <div class=\"ui-g-12 ui-md-3\">\r\n            <input type=\"text\" pInputText pTooltip=\"Enter your username\" tooltipPosition=\"top\" placeholder=\"Top\">\r\n        </div>\r\n        <div class=\"ui-g-12 ui-md-3\">\r\n            <input type=\"text\" pInputText pTooltip=\"Enter your username\" tooltipPosition=\"bottom\" placeholder=\"Bottom\">\r\n        </div>\r\n        <div class=\"ui-g-12 ui-md-3\">\r\n            <input type=\"text\" pInputText pTooltip=\"Enter your username\" tooltipPosition=\"left\" placeholder=\"Left\">\r\n        </div>\r\n    </div>\r\n\r\n    <h3>Focus and Blur</h3>\r\n    <input type=\"text\" pInputText pTooltip=\"Enter your username\" placeholder=\"Right\" tooltipEvent=\"focus\" style=\"margin-left:.5em\">\r\n</div>"
 
 /***/ }),
 
@@ -58,9 +58,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'app';
+        this.clicks = 0;
+        this.msgs = [];
     }
+    AppComponent.prototype.count = function () {
+        this.clicks++;
+    };
+    AppComponent.prototype.show = function () {
+        this.msgs.push({ severity: 'info', summary: 'Info Message', detail: 'PrimeNG rocks' });
+    };
+    AppComponent.prototype.clear = function () {
+        this.msgs = [];
+    };
     AppComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-root',
             template: __webpack_require__("../../../../../src/app/app.component.html"),
             styles: [__webpack_require__("../../../../../src/app/app.component.css")]
@@ -81,6 +92,11 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/esm5/animations.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_primeng_primeng__ = __webpack_require__("../../../../primeng/primeng.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_primeng_primeng___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_primeng_primeng__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -90,16 +106,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
+
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["E" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */]
+                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["BrowserModule"],
+                __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_common__["CommonModule"],
+                __WEBPACK_IMPORTED_MODULE_5__angular_forms__["FormsModule"],
+                __WEBPACK_IMPORTED_MODULE_6_primeng_primeng__["CheckboxModule"],
+                __WEBPACK_IMPORTED_MODULE_6_primeng_primeng__["RadioButtonModule"],
+                __WEBPACK_IMPORTED_MODULE_6_primeng_primeng__["ButtonModule"],
+                __WEBPACK_IMPORTED_MODULE_6_primeng_primeng__["PanelModule"],
+                __WEBPACK_IMPORTED_MODULE_6_primeng_primeng__["InputTextModule"],
+                __WEBPACK_IMPORTED_MODULE_6_primeng_primeng__["TooltipModule"],
+                __WEBPACK_IMPORTED_MODULE_6_primeng_primeng__["MessageModule"],
+                __WEBPACK_IMPORTED_MODULE_6_primeng_primeng__["MessagesModule"]
             ],
             providers: [],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
@@ -142,7 +173,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["enableProdMode"])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
